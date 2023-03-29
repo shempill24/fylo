@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://github.com/shempill24/front-end-mentor-challenges/blob/main/fylo-data-storage-component-master/images/bg-desktop.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: hsl(229, 57%, 11%);
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-items: center;    
+}
+.icons{
+    width: 550px;
+    height: 250px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 20px 130px 20px 20px ;
+    display: grid;
+    align-content: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+  
+}
+.logo{
+    padding-bottom:30px;
+
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    background-color:  hsl(229, 57%, 11%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    margin-right: 20px;
+
+    
+}
+.card>img{
+    width: 50%;
+    height: 40%;
+    align-self: center;
+}
+.meter{
+    position: relative;
+    margin-top: 45px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:550px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: hsla(231, 46%, 89%, 0.634);
+}
+.wrapper{
+    width: 85%;
+}
+.top{
+    padding-bottom: 15px;
+}
+.line{
+    border-radius: 28px;
+    height: 20px;
+    width: 100%;
+    background-color: hsla(229, 57%, 11%, 0.634);
+    padding: 1px;
+}
+.meteredLine{
+    width: 81.5%;
+    height: 20px;
+    background-image: linear-gradient(to right, pink, #FF69B4);
+    border-radius: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+}
+.ball{
+    background-color: white;
+    height: 17px;
+    width: 17px;
+    border-radius: 12px;
+  
+
+}
+.bottom{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.float{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 1em;
+    right: 40px;
+    top: -30px;
+    color: hsl(232, 6%, 54%);
+
+}
+.floatnumber{
+    padding-right: 10px;
+    color: black;
+    font-size: 3em;
+}
+.point{
+    margin-top: 40px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid white;
+    right: 0;
+    float: right;
+    position: absolute;
+
+}
+
+@media only screen and (max-width:1000px) {
+    body{
+        background-position: center;
+        background-size: 700%;
+        background-position-x: -1270px;
+        background-color: hsl(229, 57%, 11%);
+    }
+    section{
+        flex-direction: column;
+        
+    }
+    .icons{
+        padding-top: 50px;
+        padding-left: 40px;
+      
+    }
+    .meter{
+   
+        margin-left: 0;
+    }
+    .logo{
+        height: 120%;;
+   
+    }
+    .card{
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .card:first-child{
+        
+    }
+    .top{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    .line{
+        height: 25px;
+
+    }
+    .float{
+        right:unset;
+        top: unset;
+        bottom: -100px;
+        font-size: 1.15em;
+        padding: 15px 35px;
+    
+    }
+    .floatnumber{
+        font-size: 4em;
+    }
+    .point{
+         display: none;
+    
+    }
+}
